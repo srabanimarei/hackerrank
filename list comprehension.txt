@@ -1,0 +1,13 @@
+if __name__ == '__main__':
+    X = int(raw_input())
+    Y = int(raw_input())
+    Z= int(raw_input())
+    N = int(raw_input())
+    
+    X += 1
+    Y += 1
+    Z += 1
+    
+    tmp_list = [[x,y,z] for x in range(X) for y in range(Y) for z in range(Z)
+    if x + y + z != N]
+    print(tmp_list)
