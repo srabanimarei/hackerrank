@@ -1,0 +1,11 @@
+import numpy
+
+l=map(int,raw_input().split())
+m=[]
+for i in range(l[0]):
+    m.append(map(int,raw_input().split()))
+m=numpy.array(m)
+print numpy.mean(m,axis=1)
+print numpy.var(m,axis=0)
+print numpy.std(m,axis=None)
+
